@@ -124,9 +124,35 @@ switch (colors) {
     break;
 }
 
-
-// 6 
+// 6
 
 // Створити розмітку з двома полями введення, що приймають числа та список (select) з варіантами вибору операцій: "+", "-", "*", "/". При натисканні на кнопку виводити результат обраної операції над цими числами. Користувач повинен бути попереджений про можливість ділення на нуль.
 
-//?????
+let num1 = +prompt("Введіть число");
+let num2 = +prompt("Введіть число");
+let operation = prompt("Введіть операцію '+', '-'', '*', '/'");
+let result = 0;
+
+switch (operation) {
+  case "+":
+    result = num1 + num2;
+    break;
+  case "-":
+    result = num1 - num2;
+    break;
+  case "*":
+    result = num1 * num2;
+    break;
+  case "/":
+    if (num2 !== 0) {
+      result = num1 / num2;
+    } else {
+      alert("Не можна ділити на нуль");
+    }
+
+    break;
+  default:
+    alert("Невірна операція");
+    break;
+}
+alert(result);
