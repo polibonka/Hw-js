@@ -44,16 +44,6 @@ for (let i = 1; i < 20; i++) {
   }
 }
 
-let i = 1;
-
-// while (i >= n) {
-//   i++;
-//   if (i <= n) {
-//     break;
-//   }
-//   console.log(i);
-// }
-
 //7
 let f = 1;
 while (f <= 20) {
