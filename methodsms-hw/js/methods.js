@@ -33,13 +33,19 @@ const indexToRemove = cards.indexOf(cardToRemove1);
 if (indexToRemove !== -1) {
   cards.splice(indexToRemove, 1);
 }
-
-const cardToRemove = "Карточка-3";
-cards.splice(2, 1);
 console.log(cards);
 
 //4
 
 const cardToInsert = "Карточка-6";
 cards.splice(5, 0, cardToInsert);
+console.log(cards);
+
+//5
+
+const cardToUpdate = "Карточка-4";
+const indexToUpdate = cards.indexOf(cardToUpdate);
+if (indexToUpdate !== -1) {
+  cards[indexToUpdate] = "Оновлена Карточка-4";
+}
 console.log(cards);
