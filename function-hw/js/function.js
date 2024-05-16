@@ -69,3 +69,22 @@ console.log(checkForSpam(message2));
 const numbers = [];
 let input;
 let total = 0;
+
+do {
+  input = +prompt("Введіть число");
+  if (input !== null) {
+    if (!Number.isNaN(input)) {
+      console.log(numbers);
+      numbers.push(input);
+    } else {
+      alert("Було введено не число");
+    }
+  }
+} while (input !== null);
+
+if (numbers.length > 0) {
+  for (let number of numbers) {
+    total += number;
+  }
+}
+console.log(`Загальна сума чисел дорівнює ${total} `);
