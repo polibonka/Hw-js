@@ -17,6 +17,38 @@ if (text === randomNumber) {
   alert("Неправильно, Спробуйте ще раз.");
 }
 
-//3 
+//3
 
-//4 
+//4
+
+let arr = [1, 2, 3, 4, 5];
+const squareArray = (array, callback) => {
+  let newArr[];
+  for (let num of array) {
+    newArr.push(callback(num))
+  }
+  return newArr
+}
+const squereCallback
+
+//5
+
+// Розрахунок дисконтної ціни. Створіть функцію, яка розраховує дисконтну ціну на товар з урахуванням знижки. Функція повинна приймати вартість товару та відсоток знижки як аргументи. Використайте стрілкову функцію та колбек.
+
+const calculateDiscountedPrice = (price, discount, callback) => {
+  const discountedPrice = price - (price * (discount / 100));
+  callback(discountedPrice);
+};
+
+const printPrice = (price) => {
+  console.log(`Дисконтна ціна: ${price.toFixed(2)} грн`);
+};
+
+const originalPrice = 1000; // Вартість товару в гривнях
+const discount = 15; // Відсоток знижки
+
+calculateDiscountedPrice(originalPrice, discount, printPrice);
+
+
+
+

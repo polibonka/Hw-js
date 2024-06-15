@@ -71,7 +71,7 @@ let input;
 let total = 0;
 
 do {
-  input = +prompt("Введіть число");
+  input = prompt("Введіть число");
   if (input !== null) {
     if (!Number.isNaN(input)) {
       console.log(numbers);
