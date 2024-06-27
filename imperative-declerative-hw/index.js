@@ -97,7 +97,9 @@ const getUsersWithGender = (users, gender) => {
 
 //7  
 
-const calculateTotalBalance = users2 => {
+// map - змінює 
+
+const calculateTotalBalance = (users2) => {
   return users2.reduce((acc, user) => acc + user.balance, 0)
 };
 console.log(calculateTotalBalance(user2)); 
@@ -162,6 +164,17 @@ user2.sort((a,b) => a.friends - b.friends)
 console.log(user2);
 
 // 10
+
+const getSortedUniqueSkills = users => {
+  const allSkills = users.reduce((acc, user) => acc.concat(user.skills), [])
+const uniqeSkills = allSkills.filter((skill, index, self) => {
+  return self.indexOf(skill) === index
+})
+
+const sorted = uniqeSkills.sort()
+return sorted
+}
+console.log(getSortedUniqueSkills(user2));
 
 user2.sort((a,b) => a.skills.localeCompare(b.skills))
 console.log(user2);
