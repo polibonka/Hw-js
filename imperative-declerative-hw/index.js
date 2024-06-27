@@ -96,45 +96,13 @@ const getUsersWithGender = (users, gender) => {
   console.log(getUsersWithAge(user, 30, 40));
 
 //7  
+
 const calculateTotalBalance = users2 => {
-  return users.reduce((acc, user) => acc + user.balance, 0)
+  return users2.reduce((acc, user) => acc + user.balance, 0)
 };
-console.log(calculateTotalBalance(users2)); 
+console.log(calculateTotalBalance(user2)); 
 //8
 
-const user2 = [
-    {username: 'Moore Hensley',
-        gender: 'male',
-        isActive: true,
-        email: 'moorehensley@gmail.com',
-        age: 37,
-        balance: 2500,
-        friend:'Ross Vazquez',
-    },
-     {username: 'Sharlene Bush',
-     gender: 'male',
-     isActive: true,
-     age: 35,
-     balance: 2000,
-     friend: 'Briana Decker',
-     },
-      {username: 'Ross Vazquez',
-       gender: 'female',
-       isActive: false,
-       age: 22,
-       balance: 3000,
-       friend: 'Sheree Anthony' ,
-
-      }, 
-      {username: 'Elma Head',
-       gender: 'female',
-       isActive: false,
-       email:'elmahead@omatom.com',
-       age: 25,
-       balance: 2000,
-       friend: 'Goldie Gentry',
-      }
-];
 
 const getUsersWithFriend = (users, friendName) => {
     return users.find((user2) => user2.friend === friendName)
@@ -143,4 +111,57 @@ const getUsersWithFriend = (users, friendName) => {
   console.log(getUsersWithFriend(user2, 'Briana Decker'));
   console.log(getUsersWithFriend(user2, 'Goldie Gentry'));   
 
+  //9
 
+  const user2 = [
+    {username: 'Moore Hensley',
+        gender: 'male',
+        isActive: true,
+        email: 'moorehensley@gmail.com',
+        age: 37,
+        balance: 2500,
+        friend:'Ross Vazquez',
+        friends: 2,
+        skills:  'hiking'
+    },
+     {username: 'Sharlene Bush',
+     gender: 'male',
+     isActive: true,
+     age: 35,
+     balance: 2000,
+     friend: 'Briana Decker',
+     friends: 4,
+     skills: 'climbing',
+  
+     },
+      {username: 'Ross Vazquez',
+       gender: 'female',
+       isActive: false,
+       age: 22,
+       balance: 3000,
+       friend: 'Sheree Anthony' ,
+       friends: 3,
+       skills: 'swimming',
+  
+  
+      }, 
+      {username: 'Elma Head',
+       gender: 'female',
+       isActive: false,
+       email:'elmahead@omatom.com',
+       age: 25,
+       balance: 2000,
+       friend: 'Goldie Gentry',
+       friends: 5,
+       skills: 'tennis'
+  
+      }
+  ];
+
+user2.sort((a,b) => a.friends - b.friends)
+console.log(user2);
+
+// 10
+
+user2.sort((a,b) => a.skills.localeCompare(b.skills))
+console.log(user2);
