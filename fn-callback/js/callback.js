@@ -40,14 +40,12 @@ const calculateDiscountedPrice = (price, discount, callback) => {
   callback(discountedPrice);
 };
 
-const printPrice = (price) => {
-  console.log(`Дисконтна ціна: ${price.toFixed(2)} грн`);
+const showPrice = (discountedPrice) => {
+  console.log(`Дисконтна ціна: ${discountedPrice} грн`);
 };
 
-const originalPrice = 1000; // Вартість товару в гривнях
-const discount = 15; // Відсоток знижки
 
-calculateDiscountedPrice(originalPrice, discount, printPrice);
+calculateDiscountedPrice(1000, 15, showPrice);
 
 
 
