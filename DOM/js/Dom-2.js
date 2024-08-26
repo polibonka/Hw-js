@@ -30,4 +30,42 @@ const ingredients = [
     'Приправи',
    ];
 
-   const newElement = document.createElement('li')
+      const ingredientsList = document.querySelector('#ingredients');
+
+      const listItems = ingredients.map(ingredient => {
+        const li = document.createElement('li');
+        li.textContent = ingredient;
+        return li;
+      });
+  
+      ingredientsList.append(...listItems);
+
+
+//3
+
+const images = [
+    {
+     url:
+      'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+     alt: 'White and Black Long Fur Cat',
+    },
+    {
+     url:
+      'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+     alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+    },
+    {
+     url:
+      'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+     alt: 'Group of Horses Running',
+    },
+   ];
+
+const galleryContainer = document.querySelector('#gallery')
+const galleryItems = images.map(image => {
+    return `<li class='galletyItem'>
+    <img src=''${image.url}' alt = '${image.alt}'/><li>`
+    
+})
+
+galleryContainer.insertAdjacentElement('beforeend', galleryItems)
