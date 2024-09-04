@@ -32,3 +32,18 @@
     left: 0;
     right: 0;
     }
+
+
+    #boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    #boxes div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+    }
