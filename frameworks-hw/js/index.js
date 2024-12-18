@@ -16,5 +16,6 @@ const chartData = {
   const sales = document.querySelector('#sales-chart')
   const salesChart = new Chart(sales,styles);
 
+//2
 
 
