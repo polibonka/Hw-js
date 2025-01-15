@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node js/script.js",
+    "dev": "node js/script.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "http-server": "^14.1.1"
-  }
+  "description": ""
 }
