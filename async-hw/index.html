@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+          input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            transition: transform 1s;
+      margin-bottom: 30px;
+        }
+        .box1{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(0, 255, 64);
+            transition: transform 1s;  
+        }
+        
+
+        .game-area {
+            position: relative;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid #333;
+            background-color: #e0e0e0;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .target {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: teal;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .score-board {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="score-board">
+        <p>Очки: <span id="score">0</span></p>
+        <p>Кількість кліків: <span id="clicks">0</span></p>
+    </div>
+    <div class="game-area" id="gameArea"></div>
+    <button id="startGame">Почати гру</button>
+    <h1>Контроль часу</h1>
+    <p>Введіть час у секундах:</p>
+    <input type="number" id="timeInput" placeholder="Час у секундах" min="1">
+    <button id="startTimer">Запустити таймер</button>
+    <p id="message"></p>
+    <script src="./js/index.js"></script>
+</body>
+</html>

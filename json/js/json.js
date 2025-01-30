@@ -51,10 +51,14 @@ listStudents.addEventListener("click", (e) => {
 listStudents.addEventListener("click", (e) => {
     if(e.target.classList.contains("btn-edit")){
        const index =  e.target.parentNode.id
-       console.log(students);
+       const student = students[index];
+
+       firstName.value = student.firstName;
+       lastName.value = student.lastName;
+       age.value = student.age;
+       subject.value = student.subject;
        
-        students.splice(index, 1)
-        randomStudents()
+       editIndex = index;
     }
 
 })
