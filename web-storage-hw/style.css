@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Кнопки для задач */
+  .toggle-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .delete-btn, .delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  
+  }
+  
+  /* Форма */
+  .form, .form2, .formContact {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    align-content: center;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-content:center
+  }
+  
+  .btn, .btn-submit, .loginBtn, .registerBtn {
+    background-color: #fffcec;
+    color: rgb(8, 8, 8);
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Контакти */
+  .actions2 {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  /* Закладки */
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

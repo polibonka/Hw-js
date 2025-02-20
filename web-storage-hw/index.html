@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hw</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <input class="input" type="text" />
+    <button class="btn">Додати завдання</button>
+
+    <ul class="taskList"></ul>
+    <form class="form">
+      <label for="name">Ім'я:</label>
+      <input class="input2" type="text" name="name" />
+      <label for="email">Email:</label>
+      <input class="input-email" type="text" name="email" />
+      <button class="btn-submit" type="submit">submit</button>
+    </form>
+    <form class="form2">
+      <label for="login">Login</label>
+      <input class="input-login" type="text" name="name2" />
+      <label for="password">Password</label>
+      <input class="input-password" type="password" name="password" />
+      <button class="registerBtn">Sign in</button>
+      <button class="loginBtn">Log in</button>
+      <div id="message" class="message"></div>
+    </form>
+
+    <input type="text" id="bookmarkTitle" placeholder="Назва закладки">
+    <input type="url" id="bookmarkUrl" placeholder="URL закладки">
+    <button id="addBookmarkBtn">Додати закладку</button>
+
+    <ul id="bookmarkList"></ul>
+
+    <form class="formContact">
+        <label for="nameContact">Ім'я:</label>
+        <input id="firstName" type="text" name="nameContact" required/>
+        <label for="surnameContact">Прізвище:</label>
+        <input id="surname" type="text" name="surnameContact" required/>
+        <label for="emailContact">Email:</label>
+        <input id="email" type="text" name="emailContact" required />
+        <label for="messageContact">Телефон:</label>
+        <input id="phone"  type="text" name="telephoneContact" required/>
+        <button class="btn-submit-contact" type="submit">Додати контакт</button>
+      </form>
+      <ul id="contactList"></ul>
+
+    </form>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
